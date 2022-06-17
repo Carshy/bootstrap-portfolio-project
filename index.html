@@ -158,53 +158,87 @@
     </div>
     <!-- About Myself Section -->
     <div class="container-fluid bg-white list-unstyled" style="border-top-right-radius: 80px;
-    line-height: 24px; font-weight: 400; font-size: 16px; border: 1px solid #dfe1e6; margin: auto;">
-        <div class="row">
-            <div class="col-6">
+    line-height: 24px; font-weight: 400; font-size: 16px; border: 1px solid #dfe1e6; height: 512px;">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-6 mt-5 mr-5 mb-5">
                 <h2>About Ourselves</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-                <h2 class="text-decoration-none"><a class="text-decoration-none" href="#">LET’S CONNECT</a></h2>
+                <h2 class="text-decoration-none" style="font-size: 16px; color: #7f8cff;"><a class="text-decoration-none" href="#">LET’S CONNECT</a></h2>
 
                 <ul class="list-group d-flex flex-row">
-                    <li class="list-group-item border-0"><a href="#"><img class="github-logo1" src="images/github@2x.png" alt="twitter logo"></a></li>
-                    <li class="list-group-item border-0"><a href="#"><img class="linkedin-logo1" src="images/Linkedin-icon.png" alt="linkedin logo"></a></li>
-                    <li class="list-group-item border-0"><a href="#"><img class="angellist-logo1" src="images/angellist@2x.png" alt="twitter logo"></a></li>
-                    <li class="list-group-item border-0"><a href="#"><img class="twitter-logo1" src="images/twitter@2x.png" alt="twitter logo"></a></li>
-                    <li class="list-group-item border-0"><a href="#"><img class="medium-logo1" src="images/medium@2x.png" alt="twitter logo"></a></li>  
+                    <li class="list-group-item border-0"><a href="#"><img class="github-logo1" src="images/github@2x.png" alt="twitter logo" style="width: 19.99px; height: 19.99px;"></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="linkedin-logo1" src="images/Linkedin-icon.png" alt="linkedin logo" style="width: 19.99px; height: 19.99px;"></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="angellist-logo1" src="images/angellist@2x.png" alt="twitter logo" style="width: 19.99px; height: 19.99px;"></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="twitter-logo1" src="images/twitter@2x.png" alt="twitter logo" style="width: 19.99px; height: 19.99px;"></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="medium-logo1" src="images/medium@2x.png" alt="twitter logo" style="width: 19.99px; height: 19.99px;"></a></li>  
                 </ul>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 mt-5">
                 <ul class="list-group d-flex flex-row">
                     <li class="list-group-item border-0">Languages</li>
-                    <li class="list-group-item border-0"><img style="width: 24px; height: 16px;" src="images/drop-down.png" alt="drop down"></li>
+                    <li class="list-group-item border-0" style="margin-left: 18%;"><img style="width: 24px; height: 16px;" src="images/drop-down.png" alt="drop down"></li>
                 </ul>
 
                 <div class="about-languages d-flex flex-row">
                     <ul class="list-group">
                         <li class="list-group-item border-0"><img src="images/javaScript.png" alt="js logo"></li>
-                        <li class="list-group-item border-0">javaScript</li>
+                        <li class="list-group-item border-0 text-center">javaScript</li>
                     </ul>
 
                     <ul class="list-group">
                         <li class="list-group-item border-0"><img src="images/html.png" alt="js logo"></li>
-                        <li class="list-group-item border-0">javaScript</li>
+                        <li class="list-group-item border-0 text-center">HTML</li>
                     </ul>
 
                     <ul class="list-group">
                         <li class="list-group-item border-0"><img src="images/css.png" alt="js logo"></li>
-                        <li class="list-group-item border-0">javaScript</li>
+                        <li class="list-group-item border-0 text-center">CSS</li>
                     </ul class="list-group-item">
                 </div>
 
-                <ul class="list-group">
-                    <li class="list-group-item border-0">Frameworks ></li>
+                <ul class="list-group d-flex flex-row">
+                    <li class="list-group-item border-0">Frameworks</li>
+                    <li class="list-group-item border-0" style="margin-left: 17.5%;">></li>
                 </ul>
+                <hr>
 
-                <ul class="list-group">
-                    <li class="list-group-item border-0">Skills ></li>
+                <ul class="list-group d-flex flex-row">
+                    <li class="list-group-item border-0">Skills</li>
+                    <li class="list-group-item border-0" style="margin-left: 26%;">></li>
                 </ul>
+                <hr>
 
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form section -->
+    <div class="container-fluid contact-form bg-primary text-white">
+        <div class="row">
+            <div class="form-contact d-flex flex-column align-items-center">
+                <h1 class="text-center" style="margin-top: 156px; margin-bottom: 28px;">Contact me</h1>
+                <p class="text-align-center" style="width: 569px; height: 102px; font-size: 20px; line-height: 28px;">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+            
+                <form id="forms" action="https://formspree.io/f/mdobjgon" method="POST">
+                
+                    <div class="contact-inpt">
+                        <input class="inpt-bx" type="text" name="name" id="name" maxlength="30" placeholder="Enter your name here" required>
+                    </div>
+
+                    <div class="contact-inpt">
+                        <input class="inpt-bx" type="email" name="email" id="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email here" required>
+                    </div>
+
+                    <div class="textarea-inpt">
+                        <textarea class="txtarea-bx" maxlength="500" placeholder="Write your message here" required></textarea>
+                    </div>
+
+                    <div class="button-inpt">
+                        <button class="btn-inpt" type="submit">Get In Touch</button>
+                    </div>
+                
+                </form>
             </div>
         </div>
     </div>
